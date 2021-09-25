@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D4F1F4;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddBugController">
+   <children>
+      <Button layoutX="454.0" layoutY="340.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: #75E6DA;" text="Add Bug" />
+      <Button fx:id="cancelButton" layoutX="534.0" layoutY="340.0" mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: #75E6DA;" text="Cancel" />
+      <TextField fx:id="titleField" layoutX="190.0" layoutY="75.0" prefHeight="25.0" prefWidth="220.0" promptText="Bug Title" />
+      <ComboBox fx:id="severityBox" layoutX="225.0" layoutY="226.0" prefWidth="150.0" promptText="Severity" style="-fx-background-color: #1fc0e0;"/>
+      <ComboBox fx:id="priorityBox" layoutX="225.0" layoutY="270.0" prefWidth="150.0" promptText="Priority" style="-fx-background-color: #1fc0e0;"/>
+      <ComboBox fx:id="assigntoBox" layoutX="225.0" layoutY="315.0" prefWidth="150.0" promptText="Assign to" style="-fx-background-color: #1fc0e0;"/>
+      <TextField fx:id="descriptionField" layoutX="190.0" layoutY="106.0" prefHeight="107.0" prefWidth="220.0" promptText="Description" />
+   </children>
+</AnchorPane>
