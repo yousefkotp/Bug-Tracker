@@ -3,9 +3,9 @@ import java.time.Year;
 import java.util.Properties;
 
 public class DBConnection<connection> {
-    public static final String url = "jdbc:mysql://sql11.freemysqlhosting.net:3306/sql11440034";
-    public static String USERNAME = "sql11440034";
-    public static String PASSWORD = "gRSA22iah3";
+    public static final String url = "jdbc:mysql://";
+    public static String USERNAME = "";
+    public static String PASSWORD = "";
 
     public static void main(String[] args) throws SQLException {
 
