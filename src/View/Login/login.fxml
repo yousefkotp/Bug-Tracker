@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D4F1F4;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <TextField fx:id="username" layoutX="235.0" layoutY="146.0" promptText="Username" />
+      <PasswordField fx:id="password" layoutX="235.0" layoutY="200.0" promptText="Password" />
+      <ComboBox fx:id="comboBox" layoutX="236.0" layoutY="252.0" prefHeight="25.0" prefWidth="149.0" promptText="Admin / ProjectManager / Developer" style="-fx-background-color: #1fc0e0;"/>
+      <Button fx:id="loginButton" defaultButton="true" layoutX="399.0" layoutY="252.0" mnemonicParsing="false" onAction="#Login" style="-fx-background-color: #75E6DA;" text="Login">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Label fx:id="checkLabel" layoutX="315.0" layoutY="341.0" prefHeight="45.0" prefWidth="261.0" textFill="RED" />
+      <Label layoutX="235.0" layoutY="296.0" text="Don't have an account? " />
+      <Hyperlink fx:id="hyperlink" layoutX="359.0" layoutY="293.0" onAction="#Signup" text="Sign Up !" />
+      <ImageView fitHeight="182.0" fitWidth="261.0" layoutX="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://i.imgur.com/GJfCR2u.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="34.0" layoutX="201.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://cdn-icons-png.flaticon.com/512/709/709722.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="201.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://cdn-icons-png.flaticon.com/512/45/45259.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

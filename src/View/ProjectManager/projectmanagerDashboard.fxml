@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManagerDashboardController">
+   <children>
+      <VBox prefHeight="762.0" prefWidth="206.0" style="-fx-background-color: #1fc0e0;">
+         <children>
+            <Button fx:id="dashboardButton" mnemonicParsing="false" onAction="#dashboardClicked" style="-fx-background-color: #75E6DA;" text="Dashboard">
+               <VBox.margin>
+                  <Insets left="70.0" right="20.0" top="50.0" />
+               </VBox.margin></Button>
+            <Separator prefHeight="0.0" prefWidth="149.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="50.0" />
+               </VBox.margin>
+            </Separator>
+            <Button fx:id="projectsButton" mnemonicParsing="false" onAction="#projectsClicked" style="-fx-background-color: #75E6DA;" text="Projects">
+               <VBox.margin>
+                  <Insets left="70.0" right="20.0" top="50.0" />
+               </VBox.margin></Button>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="50.0" />
+               </VBox.margin>
+            </Separator>
+            <Button fx:id="settingsButton" mnemonicParsing="false" onAction="#settingsClicked" style="-fx-background-color: #75E6DA;" text="Settings">
+               <VBox.margin>
+                  <Insets left="70.0" right="20.0" top="50.0" />
+               </VBox.margin></Button>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="50.0" />
+               </VBox.margin>
+            </Separator>
+            <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #75E6DA;" text="Log out">
+               <VBox.margin>
+                  <Insets left="70.0" right="20.0" top="50.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="projectsPane" layoutX="201.0" prefHeight="762.0" prefWidth="1100.0" style="-fx-background-color: #D4F1F4;">
+         <children>
+            <TableView fx:id="table" prefHeight="762.0" prefWidth="1100.0" style="-fx-background-color:  #D4F1F4; -fx-selection-bar: red;">
+               <columns>
+                  <TableColumn fx:id="title_col" prefWidth="199.0" style="-fx-background-color: #D4F1F4;-fx-text-background-color: black;" text="Title" />
+                  <TableColumn fx:id="description_col" prefWidth="283.0" style="-fx-background-color: #D4F1F4;-fx-text-background-color: black;" text="Description" />
+                  <TableColumn fx:id="projectmanager_col" prefWidth="223.0" style="-fx-background-color: #D4F1F4;-fx-text-background-color: black;" text="Project Manager" />
+                  <TableColumn fx:id="datestarted_col" prefWidth="122.0" style="-fx-background-color: #D4F1F4;-fx-text-background-color: black;" text="Date Started" />
+                  <TableColumn fx:id="deadline_col" prefWidth="133.0" style="-fx-background-color: #D4F1F4;-fx-text-background-color: black;" text="Deadline" />
+                  <TableColumn fx:id="done_col" prefWidth="139.0" style="-fx-background-color: #D4F1F4;-fx-text-background-color: black;" text="Done?" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="settingsPane" layoutX="200.0" prefHeight="762.0" prefWidth="1100.0" style="-fx-background-color: #D4F1F4;">
+         <children>
+            <Label layoutX="14.0" layoutY="25.0" prefHeight="30.0" prefWidth="324.0" text="What do you want to do?">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Button layoutX="29.0" layoutY="112.0" mnemonicParsing="false" onAction="#usernameChanged" prefHeight="61.0" prefWidth="223.0" style="-fx-background-color: #75E6DA;" text="Change Username" />
+            <Button layoutX="29.0" layoutY="218.0" mnemonicParsing="false" onAction="#passwordChanged" prefHeight="61.0" prefWidth="223.0" style="-fx-background-color: #75E6DA;" text="Change Password" />
+            <Button layoutX="29.0" layoutY="319.0" mnemonicParsing="false" onAction="#emailChanged" prefHeight="61.0" prefWidth="223.0" style="-fx-background-color: #75E6DA;" text="Change Email" />
+         </children>
+      </AnchorPane>
+
+      <AnchorPane fx:id="dashboardPane" layoutX="196.0" prefHeight="762.0" prefWidth="1108.0" style="-fx-background-color: #D4F1F4;">
+         <children>
+            <Label fx:id="welcomeLabel" layoutX="21.0" layoutY="21.0" prefHeight="85.0" prefWidth="781.0">
+               <font>
+                  <Font name="Bodoni MT Poster Compressed" size="72.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="135.0" prefHeight="59.0" prefWidth="187.0" text="Active">
+               <font>
+                  <Font name="Segoe UI" size="50.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="171.0" prefHeight="94.0" prefWidth="223.0" text="Projects">
+               <font>
+                  <Font size="56.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="152.0" layoutX="15.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="339.0" />
+            <Sphere layoutX="283.0" layoutY="196.0" opacity="0.06" radius="50" />
+            <Label layoutX="29.0" layoutY="466.0" prefHeight="59.0" prefWidth="187.0" text="Done">
+               <font>
+                  <Font name="Segoe UI" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="activeLabel" layoutX="283.0" layoutY="180.0" prefHeight="30.0" prefWidth="51.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="496.0" prefHeight="94.0" prefWidth="223.0" text="Projects">
+               <font>
+                  <Font size="56.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="152.0" layoutX="15.0" layoutY="459.0" stroke="BLACK" strokeType="INSIDE" width="339.0" />
+            <Sphere layoutX="294.0" layoutY="526.0" opacity="0.06" radius="50" />
+            <Separator layoutX="11.0" layoutY="106.0" prefHeight="13.0" prefWidth="575.0" />
+            <AnchorPane layoutX="410.0" layoutY="207.0" prefHeight="438.0" prefWidth="497.0">
+               <children>
+                  <TableView fx:id="table2" prefHeight="452.0" prefWidth="530.0" style="-fx-background-color:  #d2e3f3; -fx-selection-bar: red;">
+                     <columns>
+                        <TableColumn fx:id="statusCol" prefWidth="64.0" style="-fx-background-color: #d2e3f3;-fx-text-background-color: black;" text="Status" />
+                        <TableColumn fx:id="titleCol" prefWidth="88.0" style="-fx-background-color: #d2e3f3;-fx-text-background-color: black;" text="Title" />
+                        <TableColumn fx:id="severityCol" prefWidth="67.0" style="-fx-background-color: #d2e3f3;-fx-text-background-color: black;" text="Severity" />
+                        <TableColumn fx:id="priorityCol" prefWidth="62.0" style="-fx-background-color: #d2e3f3;-fx-text-background-color: black;" text="Priority" />
+                        <TableColumn fx:id="reporterCol" prefWidth="95.0" style="-fx-background-color: #d2e3f3;-fx-text-background-color: black;" text="Reporter" />
+                        <TableColumn fx:id="dateofsumbissionCol" prefWidth="152.0" style="-fx-background-color: #d2e3f3;-fx-text-background-color: black;" text="Date Of Sumbission" />
+                        <TableColumn fx:id="assignedtoCol" prefWidth="84.0" style="-fx-background-color: #d2e3f3;-fx-text-background-color: black;" text="Assigned To" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="doneLabel" layoutX="293.0" layoutY="511.0" prefHeight="30.0" prefWidth="51.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutY="-5.0" orientation="VERTICAL" prefHeight="720.0" prefWidth="3.0" />
+            <Label fx:id="dateLabel" layoutX="920.0" layoutY="21.0" prefHeight="30.0" prefWidth="132.0" />
+            <MenuButton fx:id="menuButton" layoutX="412.0" layoutY="163.0" mnemonicParsing="false" style="-fx-background-color: #1fc0e0;" text="Select a Project" />
+            <Button fx:id="seeBug" layoutX="959.0" layoutY="374.0" mnemonicParsing="false" onAction="#seeBug" style="-fx-background-color: #75E6DA;" text="See Bug Details" />
+            <Button layoutX="959.0" layoutY="433.0" mnemonicParsing="false" onAction="#addBug" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #75E6DA;" text="Add Bug" />
+            <Label fx:id="checkLabel" layoutX="586.0" layoutY="672.0" prefHeight="40.0" prefWidth="214.0" textFill="RED" />
+            <Button layoutX="554.0" layoutY="163.0" mnemonicParsing="false" onAction="#addProject" prefHeight="13.0" prefWidth="113.0" style="-fx-background-color: #75E6DA;" text="Add Project" />
+            <Button layoutX="693.0" layoutY="163.0" mnemonicParsing="false" onAction="#mark" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: #75E6DA;" text="Mark this project as done" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
