@@ -2,7 +2,28 @@
 A bug tracking software which organizes the project and track each bug within each project with a professional GUI and database.
 
 ## Table of Content
-
+- [Bug-Tracker](#bug-tracker)
+  * [Table of Content](#table-of-content)
+  * [Project Functionalities](#project-functionalities)
+  * [Dependencies](#dependencies)
+  * [Tools](#tools)
+  * [Deployment](#deployment)
+  * [Design Pattern](#design-pattern)
+  * [S.O.L.I.D Principles](#solid-principles)
+  * [Database Models](#database-models)
+  * [Author](#author)
+  * [Common Errors](#common-errors)
+  * [Screenshots](#screenshots)
+    + [Login Page](#login-page)
+    + [Sign up Page](#sign-up-page)
+    + [Admin Dashboard(1)](#admin-dashboard-1)
+    + [Admin Dashboard(2)](#admin-dashboard-2)
+    + [Admin Dashboard(3)](#admin-dashboard-3)
+    + [Project Manager Dashboard](#project-manager-dashboard)
+    + [Add Project Page](#add-project-page)
+    + [Add Bug Page](#add-bug-page)
+    + [Bug Details Page](#bug-details-page)
+    + [Project Details Page](#project-details-page)
 
 ## Project Functionalities
 1. Supports users with different roles (Admin, Project Manager, Developer).
@@ -94,17 +115,17 @@ Add this line to VM Options:
   <img src="https://user-images.githubusercontent.com/41492875/134807538-d7120601-6619-4162-9b68-0453ca2d2d11.png"/>
 </p>
 
-### Admin Dashboard (1)
+### Admin Dashboard 1
 <p align="center">
   <img src="https://user-images.githubusercontent.com/41492875/134807529-af9197d5-9d61-4ae9-ae83-221f0450ab6a.png"/>
 </p>
 
-### Admin Dashboard (2)
+### Admin Dashboard 2
 <p align="center">
   <img src="https://user-images.githubusercontent.com/41492875/134807535-72b72d35-c526-4de2-8422-38aceb84b850.png"/>
 </p>
 
-### Admin Dashboard (3)
+### Admin Dashboard 3
 <p align="center">
   <img src="https://user-images.githubusercontent.com/41492875/134807534-27caade9-368b-4fb7-a238-b751468cfdf4.png"/>
 </p>
