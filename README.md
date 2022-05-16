@@ -3,7 +3,6 @@ A bug tracking software which organizes the project and track each bug within ea
 
 ## Table of Content
 - [Bug-Tracker](#bug-tracker)
-  * [Table of Content](#table-of-content)
   * [Project Functionalities](#project-functionalities)
   * [Dependencies](#dependencies)
   * [Tools](#tools)
@@ -75,7 +74,24 @@ Run the "GUIStart" class inside View folder as your main class
 
 
 ## Design Pattern
-**Model-View-Controller Design Pattern**
+<p align="center">
+ <strong> Model-View-Controller Design Pattern</strong>
+</p>
+
+
+In "src" folder, you will find 3 sub folders name "Model", "View" and "Controller". These folders contain the classes where MVC pattern is applied
+
+**1. Model**
+
+contains only the pure application data, it contains no logic describing how to present the data to a user.
+
+**2. View**
+
+presents the model’s data to the user. The view knows how to access the model’s data, but it does not know what this data means or what the user can do to manipulate it.
+
+**3. Controller**
+
+Exists between the view and the model. It listens to events triggered by the view and executes the appropriate reaction to these events. The reaction is to call a method on the controller classes. Since the view and the model are connected through a notification mechanism, the result of this action is then automatically reflected in the view.
 
 ## S.O.L.I.D Principles
 
