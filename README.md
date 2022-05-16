@@ -26,7 +26,6 @@ After you'll get a search box. There you should put:
 
 This library is already downloaded in the repo, you won't have to download it.
 
-
 ## Tools
 1. IntelliJ IDEA (IDE)
 2. Java
@@ -35,6 +34,8 @@ This library is already downloaded in the repo, you won't have to download it.
 5. MYSQL J Connector to connect to the database
 6. freemysqlhosting.net to host the database
 7. Scene Builder for GUI
+
+
 ## Deployment
 **1. Setting your Database**
 
@@ -51,8 +52,12 @@ Inside "dbUtil" folder, you will find "DBConnection" class. You can change the v
 
 Run the "GUIStart" class inside View folder as your main class
 
+
 ## Design Pattern
-**1. Model-View-Controller Design Pattern**
+**Model-View-Controller Design Pattern**
+
+## S.O.L.I.D Principles
+
 
 ## Database Models
 [Database Models](Database%20Models)
@@ -79,28 +84,55 @@ Add this line to VM Options:
 > --module-path "javafx-sdk-17\lib" --add-modules=javafx.controls,javafx.fxml
 
 ## Screenshots
+### Login Page
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/41492875/134807539-e8cad699-50c7-4b40-b1ce-92d91c8c7ad0.png"/>
+</p>
 
-![Screenshot (316)](https://user-images.githubusercontent.com/41492875/134807539-e8cad699-50c7-4b40-b1ce-92d91c8c7ad0.png)
+### Sign up Page
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/41492875/134807538-d7120601-6619-4162-9b68-0453ca2d2d11.png"/>
+</p>
 
-![Screenshot (319)](https://user-images.githubusercontent.com/41492875/134807538-d7120601-6619-4162-9b68-0453ca2d2d11.png)
+### Admin Dashboard (1)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/41492875/134807529-af9197d5-9d61-4ae9-ae83-221f0450ab6a.png"/>
+</p>
 
-![Screenshot (320)](https://user-images.githubusercontent.com/41492875/134807537-907aa061-aaab-4027-9694-fa7c4fc5a7ab.png)
+### Admin Dashboard (2)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/41492875/134807535-72b72d35-c526-4de2-8422-38aceb84b850.png"/>
+</p>
 
-![Screenshot (321)](https://user-images.githubusercontent.com/41492875/134807536-d11ab801-8054-462e-8eab-8494ac46d3eb.png)
+### Admin Dashboard (3)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/41492875/134807534-27caade9-368b-4fb7-a238-b751468cfdf4.png"/>
+</p>
 
-![Screenshot (322)](https://user-images.githubusercontent.com/41492875/134807535-72b72d35-c526-4de2-8422-38aceb84b850.png)
+### Project Manager Dashboard
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/41492875/134807532-93c3a4db-b23a-4838-bbd1-a3b16769725b.png"/>
+</p>
 
-![Screenshot (323)](https://user-images.githubusercontent.com/41492875/134807534-27caade9-368b-4fb7-a238-b751468cfdf4.png)
+### Add Project Page
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/41492875/134807537-907aa061-aaab-4027-9694-fa7c4fc5a7ab.png"/>
+</p>
 
-![Screenshot (324)](https://user-images.githubusercontent.com/41492875/134807532-93c3a4db-b23a-4838-bbd1-a3b16769725b.png)
+### Add Bug Page
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/41492875/134807536-d11ab801-8054-462e-8eab-8494ac46d3eb.png"/>
+</p>
 
-![Screenshot (325)](https://user-images.githubusercontent.com/41492875/134807531-657b40dd-9ca9-4d20-b246-cd266fce0f90.png)
+### Bug Details Page
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/41492875/134807530-668c692d-48dd-4806-8a2a-71e909aa7b63.png"/>
+</p>
 
-![Screenshot (326)](https://user-images.githubusercontent.com/41492875/134807530-668c692d-48dd-4806-8a2a-71e909aa7b63.png)
-
-![Screenshot (327)](https://user-images.githubusercontent.com/41492875/134807529-af9197d5-9d61-4ae9-ae83-221f0450ab6a.png)
-
-![Screenshot (328)](https://user-images.githubusercontent.com/41492875/134807526-feb99d5d-4dc1-4780-b685-4f9d10b4210f.png)
+### Project Details Page
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/41492875/134807526-feb99d5d-4dc1-4780-b685-4f9d10b4210f.png"/>
+</p>
 
 
 
