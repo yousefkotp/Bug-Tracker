@@ -34,6 +34,7 @@ This library is already downloaded in the repo, you won't have to download it.
 4. MYSQL to manage database
 5. MYSQL J Connector to connect to the database
 6. freemysqlhosting.net to host the database
+7. Scene Builder for GUI
 ## Deployment
 **1. Setting your Database**
 
