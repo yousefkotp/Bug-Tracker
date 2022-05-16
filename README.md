@@ -54,8 +54,8 @@ Run the "GUIStart" class inside View folder as your main class
 ## Design Pattern
 **1. Model-View-Controller Design Pattern**
 
-## Database model
-
+## Database Models
+[Database Models](Database%20Models)
 
 ## Author
 1. [Yousef Kotp] (https://github.com/yousefkotp)
