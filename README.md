@@ -63,7 +63,7 @@ Run the "GUIStart" class inside View folder as your main class
 [Database Models](Database%20Models)
 
 ## Author
-1. [Yousef Kotp] (https://github.com/yousefkotp)
+[Yousef Kotp](https://github.com/yousefkotp)
 
 ## Common Errors
 > You should open your IDE. File->Project Structure->Module. You should mark each folder you find inside "src" folder as a source. If you don't do so you can face many errors.
