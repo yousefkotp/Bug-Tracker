@@ -1,5 +1,83 @@
 # Bug-Tracker
-A bug tracking software which organizes the project and track each related bug with a professional GUI and database.
+A bug tracking software which organizes the project and track each bug within each project with a professional GUI and database.
+
+## Table of Content
+
+
+## Project Functionalities
+1. Supports users with different roles (Admin, Project Manager, Developer).
+2. Authentication and Authorization.
+3. Database connection.
+4. Different dashboard for each user (Admin, Project Manager, Developer).
+5. Adding projects and assigning them to developers.
+6. Adding bugs tickets withing each project and assigning them to certain developer.
+7. Adding comments to each bug ticket.
+
+## Dependencies
+**1. mysql-connector-java-8.0.26**
+
+Open your IDE (preferably IntelliJ IDEA), File->Project Structure->Libraries. Then click on the plus(+) sign and select From Maven....
+
+After you'll get a search box. There you should put:
+
+    mysql:mysql-connector-java:8.0.26
+
+**2. javafx-sdk-17**
+
+This library is already downloaded in the repo, you won't have to download it.
+
+
+## Tools
+1. IntelliJ IDEA (IDE)
+2. Java
+3. JavaFX
+4. MYSQL to manage database
+5. MYSQL J Connector to connect to the database
+6. freemysqlhosting.net to host the database
+## Deployment
+**1. Setting your Database**
+
+Inside "dbUtil" folder, you will find "DBConnection" class. You can change the value of the following variables and assign them to your database.
+
+1. url
+   Change this variable to the url of your database
+2. USERNAME
+   Change this variable to the username of your database
+3. PASSWORD
+   Change this variable to the password of your database
+
+**2. Running your main class**
+
+Run the "GUIStart" class inside View folder as your main class
+
+## Design Pattern
+**1. Model-View-Controller Design Pattern**
+
+## Database model
+
+
+## Author
+1. [Yousef Kotp] (https://github.com/yousefkotp)
+
+## Common Errors
+> You should open your IDE. File->Project Structure->Module. You should mark each folder you find inside "src" folder as a source. If you don't do so you can face many errors.
+
+**1. Error: JavaFX runtime components are missing, and are required to run this application**
+> File >> Project Structure >> Modules >> Dependency >> + (on left-side of window)
+
+clicking the "+" sign will let you designate the directory where you have unpacked JavaFX's "lib" folder.
+
+Scope is Compile (which is the default.) You can then edit this to call it JavaFX by double-clicking on the line.
+
+then in:
+
+> Run >> Edit Configurations
+
+Add this line to VM Options:
+
+> --module-path "javafx-sdk-17\lib" --add-modules=javafx.controls,javafx.fxml
+
+## Screenshots
 
 ![Screenshot (316)](https://user-images.githubusercontent.com/41492875/134807539-e8cad699-50c7-4b40-b1ce-92d91c8c7ad0.png)
 
@@ -22,7 +100,6 @@ A bug tracking software which organizes the project and track each related bug w
 ![Screenshot (327)](https://user-images.githubusercontent.com/41492875/134807529-af9197d5-9d61-4ae9-ae83-221f0450ab6a.png)
 
 ![Screenshot (328)](https://user-images.githubusercontent.com/41492875/134807526-feb99d5d-4dc1-4780-b685-4f9d10b4210f.png)
-
 
 
 
