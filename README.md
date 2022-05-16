@@ -1,5 +1,5 @@
 # Bug-Tracker
-A bug tracking software which organizes the project and track each bug within each project with a professional GUI and database.
+A bug tracking software which organizes the project between project managers and developers by tracking each bug within each project with a professional GUI and database.
 
 ## Table of Content
 - [Bug-Tracker](#bug-tracker)
@@ -94,6 +94,15 @@ presents the modelâ€™s data to the user. The view knows how to access the modelâ
 Exists between the view and the model. It listens to events triggered by the view and executes the appropriate reaction to these events. The reaction is to call a method on the controller classes. Since the view and the model are connected through a notification mechanism, the result of this action is then automatically reflected in the view.
 
 ## S.O.L.I.D Principles
+**1. Single-Responsibility Principle**
+
+A class should have one and only one reason to change, meaning that a class should have only one job. That is why controller classes such as "AddBugController". such classes are only responsible for one thing as shown from classes' name.
+
+**2.  Open-Closed Principle**
+
+If you want to contribute to this project by adding whatever you want, all you need is no less than 3 classes in 3 different folders which are Model, View and controller folders.
+
+You write the pure data or your template in your new Model class. Develop a GUI for your added feature in your new View class. Define how you want it to react for whatever the user does in your new Controller class.
 
 
 ## Database Models
